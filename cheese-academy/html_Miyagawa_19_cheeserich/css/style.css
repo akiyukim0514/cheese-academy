@@ -1,0 +1,671 @@
+/* ここから下に記載していく */
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px gray solid;
+    width: 1200px;
+    /* https://qiita.com/7note/items/6bcadabe1667919bc26c */
+    height: 124px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    /* whiteにしないとz-index指定しても透ける？？ */
+    background-color: white;
+}
+
+.header__logo {
+    margin: 20px 32px;
+}
+
+/* リンクにした場合の文字色が変わらないことと、アンダーバーを削除させる */
+.header__content {
+    margin: 0 25px;
+    align-items: center;
+    font-size: 21px;
+    color: #222222;
+    text-decoration: none;
+} 
+
+
+.header__contents {
+    margin: 50px 0px;
+} 
+
+.header__content:hover{
+    cursor: pointer;
+} 
+
+.mainvisual {
+    /* header 固定をしているため、同サイズのpaddingがないと重なる */
+    padding-top: 124px;
+}
+
+.mainvisual__image {
+    background-image: url(../img/mainbg.png);
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contents {
+    text-align: center;
+
+}
+
+.content__title {
+    padding: 60px 0 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+}
+span {
+    color: #ffd61a;
+}
+
+.content__subtitle {
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+.content__explanations {
+    font-size: 16px;
+}
+
+.content__explanation1 {
+    margin-bottom: 40px;
+}
+
+.content__explanation2, .content__explanation5{
+    margin: 12px 0;
+}
+
+.content__explanation4 {
+    margin: 40px 0;
+}
+
+.content__explanation6 {
+    margin-bottom: 80px ;
+}
+
+/* スライドショーCSS only 参考：https://copypet.jp/648/ */
+.about__image {
+    width: 385px;
+    height: 255px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img__contents {
+    width: 400%;
+    position: relative;
+    left: 0;
+    animation: slider 20s infinite ease;
+}
+
+.img__content {
+    width: 385px;
+    height: 255px;
+    float: left;
+    position: relative;
+}
+
+/* スライドショーのために作成 */
+
+@-webkit-keyframes slider {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(-385px);
+        transform: translateX(-385px);
+    }
+    50% {
+        -webkit-transform: translateX(-770px);
+        transform: translateX(-770px);
+    }
+    75% {
+        -webkit-transform: translateX(-1155px);
+        transform: translateX(-1155px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slider {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(-385px);
+        transform: translateX(-385px);
+    }
+    50% {
+        -webkit-transform: translateX(-770px);
+        transform: translateX(-770px);
+    }
+    75% {
+        -webkit-transform: translateX(-1155px);
+        transform: translateX(-1155px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.content__explanation8 {
+    margin-top: 12px;
+    margin-bottom: 60px;
+}
+
+.course__container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    align-items: center; 
+    justify-content: center;
+    width:100%
+}
+
+.course__item {
+    width: 50%;
+    height: 100%
+}
+
+/* 参考:https://fuuno.net/web/trim/trim.html */
+.course__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.course__explanations {
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+.course__explanation {
+    padding-bottom: 12px;
+}
+
+.item__right {
+    padding-left: 50px;
+
+}
+.item__left {
+    padding-right: 50px;
+    margin-left: 120px;
+    width: 480px;
+
+}
+
+.item__group {
+    text-align: left;
+    width: 480px;
+}
+
+.news__card {
+    width: 300px;
+    height: 360px;
+    background-color: antiquewhite;
+    margin: 0 15px 60px 15px;
+}
+
+.news__card:hover{
+    box-shadow: 0 10px 25px 0 black;
+    cursor: pointer;
+
+}
+
+.card__image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../img/news_img.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__card p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.card__date {
+    margin: 30px 0 24px 0;
+}
+
+.card__exp {
+    margin-top: 12px;
+}
+
+.news__contents {
+    display: flex;
+    justify-content: center;
+}
+
+/* moreをクリックすると画像が表示されるのをcssだけでやる
+https://saruwakakun.com/html-css/reference/hidden-show */
+.news__addContent {
+    background-color: #ffd61a;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    color: #fafafa;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+
+.news__addContent:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.add__input{
+    display: none;
+}
+
+.news__addContent .add__show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1.5s;
+    object-fit: cover;
+}
+
+.news__addContent input:checked ~ .add__show {
+    padding: 50px 0;
+    height: auto;
+    opacity: 1;
+}
+
+.add__show img {
+    width: 200px;
+    height: 200px;
+}
+
+.btn {
+    background-color: #ffd61a;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    color: #fafafa;
+    margin: 0 auto;
+}
+
+/* ボタン内の文字中央揃え 参考https://zenn.dev/syu/articles/5644da15c5226e */
+.btn p {
+    line-height: 60px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.access__wrapper {
+    background-color: #fafafa;
+}
+
+.access__content {
+    margin-top: 60px;
+}
+
+/* .access__map {
+    padding-bottom: 60px;
+} */
+
+.company {
+    text-align: left;
+    
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing:30px 0;
+    line-height: 50px;
+    font-size: 16px;
+    padding: 60px 0;
+}
+
+.content__explanation10 {
+    padding-top: 12px;
+    padding-bottom: 30px;
+}
+
+.content__explanation12 {
+    padding-top: 12px;
+    padding-bottom: 70px;
+}
+
+.contact__table {
+    margin-bottom: 30px;
+    width: 640px;
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.contact__item {
+    padding: 8px 64px 8px 16px;
+    border-top: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    text-align: left;
+    width: 240px;
+}
+
+.contact__body {
+    padding: 8px;
+    border-top: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    width: 400px;
+}
+
+.body__txt {
+    width: 328px;
+    line-height: 36px;
+    border: 1px solid #bfbfbf;
+    display: flex;   
+}
+
+#contact_select {
+    width: 334px;
+    height: 36px;
+    border: 1px solid #bfbfbf;
+    display: flex;
+    font-size: 16px;
+}
+
+.contact__reasons {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.reason__txt {
+    color: #222222;
+    margin-left: 12px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.contact__itemdetail {
+    padding: 8px 64px 8px 16px;
+    border-top: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    text-align: left;
+    vertical-align: top;
+    width: 240px;
+}
+
+.detail__area {
+    width: 328px;
+    border: 1px solid #bfbfbf;
+    display: flex;  
+}
+
+.contact__submit {
+    border: none;
+    margin-bottom: 140px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #707070;
+    padding: 30px 0;
+}
+
+.footer__cr {
+    font-size: 16px;
+    color: #fafafa;
+}
+
+/* course要素だけレスポンシブ対応 */
+@media screen and (max-width: 480px) {
+    .course__container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        background-color: #fafafa;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .course__item {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .child1 {
+        order: 1;
+    }
+
+    .child2 {
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+    .child3 {
+        order: 4;
+        margin-bottom: 20px;
+    }
+
+    .child4 {
+        order: 3;
+    }
+    
+    .child5 {
+        order: 5;
+    }
+
+    .child6 {
+        order: 6;
+    }
+    
+    .course__explanation {
+        padding-bottom: 12px;
+    }
+    
+    .item__right {
+        padding: 0;
+        
+    }
+    .item__left {
+        text-align: left;
+        margin: 0;
+    }
+    
+    .item__group {
+        text-align: left;
+        width: 480px;
+        height: ;
+    }
+    
+    .card2, .card3 {
+        display: none;
+    }
+
+    .header__content {
+        margin: 0px 25px 0px 0px;
+    }
+}
+/* 変更していない値は引き継がれてしまう？元の値をクリアすることは可能なのか */
+
+/* ここから追加 */
+    
+    .subvisual {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        border-radius: 20px;
+    }
+
+    .subimages {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .randomimages {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        animation: fluffy1 1s ease infinite;
+        border: 1px solid #707070;
+    }
+
+    @keyframes  fluffy1 {
+        0% { transform:translateY(0) }
+        5% { transform:translateY(0) }
+        10% { transform:translateY(0) }
+        20% { transform:translateY(-15px) }
+        25% { transform:translateY(0) }
+        30% { transform:translateY(-15px) }
+        50% { transform:translateY(0) }
+        100% { transform:translateY(0) }
+    }
+
+    .pizza__click {
+        background-color: #2b2b2b;
+        width: 300px;
+        height: 60px;
+        font-size: 18px;
+        color: #fafafa;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 60px;
+        border-radius: 50px;
+        font-weight: bold;
+    }
+
+    .sub__slide {
+        height: 500px;
+        width: 100%;
+    }
+
+    .sub__slide img {
+        object-fit: cover;
+        height: 500px;
+        width: 100%;
+        /* opacity: 0.5; */
+    }
+
+ 
+
+    .todaypizza {
+        position: relative;
+    }
+
+    .subvisual {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0 auto;
+        display: none;
+    }
+
+    .start {
+        background: #ffd61a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9000;
+    }
+
+    .start__logo {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        z-index: 9999;
+        width: 280px;
+    }
+
+    .start__logo p {
+        text-align: left;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .countdown {
+        font-size: 40px;
+        margin: 40px auto;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        width: 400px;
+        background-color: #f83b3b;
+        color: #fafafa;
+        border-radius: 20px;
+    }
+
+    .pizzatext {
+        font-size: 50px;
+        color: #222222;
+        line-height: 70px;
+        height: 70px;
+        margin: 50px auto;
+        text-align: center;
+
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

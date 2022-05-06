@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+<!-- テスト -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>チーズアカデミー</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+  <div class="wrap">
+    <!--  ヘッダーをかく -->
+    <header id="header">
+      <!-- ロゴ -->
+      <div class="header__logo">
+        <!-- ロゴクリックでトップに戻るようにaタグ -->
+        <a href="./index.html">
+        <img src="./img/header_logo.png" alt="">
+        </a>
+      </div>
+      <!-- メニューを書いていく。リンクになることを見越してaタグで書く -->
+      <div class="header__contents">
+       <a class="header__content" href="#about">
+         ABOUT
+        </a>
+       <a class="header__content" href="#course">
+         COURSE
+        </a>
+       <a class="header__content" href="#news">
+         NEWS
+        </a>
+       <a class="header__content" href="#access">
+         ACCESS
+       </a>
+       <a class="header__content" href="#contact">
+         CONTACT
+       </a>
+      </div>
+    </header>
+    <!-- 最初のメイン画像とコピー -->
+    <div class="mainvisual">
+      <!-- <div class="mainvisual__image">-->
+      <!-- <p class="title__main">セカイを変えるチーズを作ろう</p>
+      <p class="title__sub">チーズ職人養成学校「チーズアカデミーTOKYO」</p> -->
+      <!-- <h1>セカイを変えるチーズを作ろう</h1> -->
+      <!-- <h2>チーズ職人養成学校「チーズアカデミーTOKYO」</h2> -->
+      <div class="todaypizza">
+        <!-- スライド -->
+        <div class="sub__slide">
+          <div class="slidepizza"><img src="./img/pizza1.png" alt=""></div>
+          <div class="slidepizza"><img src="./img/pizza2.png" alt=""></div>
+          <div class="slidepizza"><img src="./img/pizza3.png" alt=""></div>
+          <div class="slidepizza"><img src="./img/pizza4.png" alt=""></div>
+        </div>
+        <!-- ランダムのピザ -->
+        <div class="subvisual">
+          <div class="subimages">
+            <img class ="randomimages" src="./img/allpizza.png" alt="">
+          </div>
+          <p class="pizza__click">今日のピザをGET!!</p>
+        </div>
+      </div>
+    </div>
+    <!-- 時計画像 -->
+    <div class="pizzamaker">
+      <p class="pizzatext">ピザ出来上がりまで</p>
+      <p class="countdown">9:59</p>
+    </div>
+    <!-- ここから各コンテンツ（aboutなど） -->
+    <div class="contents" id="about">
+      <div class="content">
+        <!-- メインタイトル -->
+        <!-- <p class="content__title">
+          ABOUT
+        </p> -->
+        <div class="content__title">
+          <!-- <div class="content__titleAbout"> -->
+           <span><h3>ABOUT</h3></span>
+          <!-- </div> -->
+        </div>
+        <!-- サブの説明 -->
+        <p class="content__subtitle">
+          チーズアカデミーについて
+        </p>
+        <!-- 詳細説明 -->
+        <div class="content__explanations">
+          <p class="content__explanation1">
+            チーズアカデミーは、チーズ職人養成学校です。
+          </p>
+          <p class="content__explanation2">
+            チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
+          </p>
+          <p class="content__explanation3">
+            そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。
+          </p>
+          <p class="content__explanation4">
+            そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。
+          </p>
+          <p class="content__explanation5">
+            卒業後、チーズ自給自足のバックアップはもちろんのこと、
+          </p>
+          <p class="content__explanation6">
+            チーズ職人への就職・転職もサポートします。
+          </p>
+        </div>
+          <!-- ここからABOUTの画像 -->
+        <div class="about__image">
+          <div class="img__contents">
+            <div class="img__content">
+              <img class="img__detail" src="./img/about_04.jpg" alt="ピザを持つ人">
+            </div>
+            <div class="img__content">
+              <img class="img__detail" src="./img/about_03.jpg" alt="腕を組む農家">
+            </div>
+            <div class="img__content">
+              <img class="img__detail" src="./img/about_02.jpg" alt="大地">
+            </div>
+            <div class="img__content">
+              <img class="img__detail" src="./img/about_01.jpg" alt="チーズを取る人々">
+            </div>
+          </div>
+        </div>        
+        <!-- ここからCOURSEの内容 -->
+        <div class="content__title" id="course">
+          <h3>COURSE</h3>
+        </div>
+        <!-- 詳細説明 -->
+        <div class="content__explanations">
+          <p class="content__explanation7">
+            未経験からでもスタートができるよう、カリキュラムは多くの専門家や
+          </p>
+          <p class="content__explanation8">
+            現役チーズ職人のアドバイスのもと、作られました。
+          </p>
+        </div>
+        <!-- ここからCOURSEの画像関連 -->
+        <div class="course__wrapper">
+          <div class="course__container">
+            <div class="course__item child1">
+              <img src="./img/course_01.jpg" alt="農場">
+            </div>
+            <div class="course__item child2">
+              <!-- 自動で高さ調整するために文言だけのクラスを作る。箱の中の箱 -->
+              <div class="item__group">
+                <div class="item__right">
+                  <p class="course__title">
+                    本格的な農園を使った実地研修
+                  </p>
+                    <div class="course__explanations">
+                      <p class="course__explanation">
+                        チーズアカデミーでは、本格的な農園を使った実地研修を
+                      </p>
+                      <p class="course__explanation">
+                        行うことができます。プロとして活躍するチーズ職人も
+                      </p>
+                      <p class="course__explanation">
+                        使用するような、広大で環境も整った農園を余すところ
+                      </p>
+                      <p class="course__explanation">
+                        なく使い、卒業時には本格的なチーズを自分の力で作れる
+                      </p>
+                      <p class="course__explanation">
+                        実践力の養成を目指します。
+                      </p>
+                    </div>
+                </div>
+              </div>              
+            </div>
+            <div class="course__item child3">
+              <div class="item__group">
+                <div class="item__left">
+                  <p class="course__title">
+                    必要な知識もしっかりと取得
+                  </p>
+                  <div class="course__explanations">
+                    <p class="course__explanation">
+                      チーズ作りには、しっかりとした食に関する知識が
+                    </p>
+                    <p class="course__explanation">
+                      欠かせません。チーズアカデミーでは、一流講師陣による、
+                    </p>
+                    <p class="course__explanation">
+                      チーズ作りに必要ないろはを余すところなく学べます。
+                    </p>
+                    <p class="course__explanation">
+                      チーズそのものでなく、栄養学全般を学ぶことも
+                    </p>
+                    <p class="course__explanation">
+                      可能ですので、チーズ以外への展開も夢ではないでしょう。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="course__item child4">
+              <img src="./img/course_02.jpg" alt="教師">
+            </div>
+            <div class="course__item child5">
+              <img src="./img/course_03.jpg" alt="チーズをとる">
+            </div>
+            <div class="course__item child6">
+              <div class="item__group">
+                <div class="item__right">
+                  <p class="course__title">
+                    卒業制作はティスティング審査あり
+                  </p>
+                  <div class="course__explanations">
+                    <p class="course__explanation">
+                      チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。
+                    </p>
+                    <p class="course__explanation">
+                      卒業制作として、チーズ作りを実際に行います。卒業後、
+                    </p>
+                    <p class="course__explanation">
+                      一般参加によるティスティング審査があるため、作り手の
+                    </p>
+                    <p class="course__explanation">
+                      目線だけでなく、消費者の目線から、卒業制作作品としての
+                    </p>
+                    <p class="course__explanation">
+                      チーズを、しっかりと評価いただくことができます。
+                    </p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ここからnews -->
+        <div class="content__title" id="news">
+           <span><h3>NEWS</h3></span>
+        </div>
+        <div class="content__explanations">
+          <p class="content__subtitle">
+            ニュース
+          </p>
+        </div>    
+        <!-- チーズのカード -->
+        <div class="news__contents">
+          <div class="news__card card1">
+            <div class="card__image"></div>
+            <p class="card__date">
+              2016/11/18
+            </p>
+            <p class="card__exp">
+              チーズアカデミー卒業生のコスゲさんによる
+            </p>
+            <p class="card__exp">
+              チーズだけをふんだんに使用した話題のピザ屋
+            </p>
+            <p class="card__exp">
+              「Kosuge Pizza」が渋谷でオープンしました！
+            </p>
+          </div>
+          <div class="news__card card2">
+            <div class="card__image"></div>
+            <p class="card__date">
+              2016/11/18
+            </p>
+            <p class="card__exp">
+              チーズアカデミー卒業生のコスゲさんによる
+            </p>
+            <p class="card__exp">
+              チーズだけをふんだんに使用した話題のピザ屋
+            </p>
+            <p class="card__exp">
+              「Kosuge Pizza」が渋谷でオープンしました！
+            </p>
+          </div>
+          <div class="news__card card3">
+            <div class="card__image"></div>
+            <p class="card__date">
+              2016/11/18
+            </p>
+            <p class="card__exp">
+              チーズアカデミー卒業生のコスゲさんによる
+            </p>
+            <p class="card__exp">
+              チーズだけをふんだんに使用した話題のピザ屋
+            </p>
+            <p class="card__exp">
+              「Kosuge Pizza」が渋谷でオープンしました！
+            </p>
+          </div>
+        </div>
+        <label for="addContent">
+        <div class="news__addContent">
+            More
+            <input type="checkbox" id="addContent" class="add__input">
+          </label>
+          <div class="add__show">
+              <p><img src="./img/love_pizza.webp" alt=""></p>
+          </div>
+        </div>
+        <p class="add__space" id="addContent"></p>
+        <!-- ボタン要素 -->
+        <!-- <div class="btn news__detail">
+          <p>
+            More
+          </p>
+        </div> -->
+        <!-- ここからアクセス -->
+        <div class="access__wrapper" id="access">
+          <div class="access__content">
+            <div class="content__title">
+              <h3>Access</h3>
+            </div>
+            <div class="content__explanations">
+            <p class="content__subtitle">
+              企業情報
+            </p>
+            </div>
+            <!-- Googleマップ -->
+            <div class="access__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.6962324831156!2d139.71314771910815!3d35.66733719913361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9faa249f2b%3A0x3563e92b2a0598d3!2z44CSMTA3LTAwNjEg5p2x5Lqs6YO95riv5Yy65YyX6Z2S5bGx77yT5LiB55uu77yV4oiS77yW!5e0!3m2!1sja!2sjp!4v1650776425607!5m2!1sja!2sjp" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- 会社概要 -->
+            <!-- テーブルを利用 参考：https://minimalwp.com/19990/ -->
+            <div class="company__content">
+              <table class="company">
+              <tr>
+                <th>学校名</th>
+                <td>チーズアカデミーTOKYO</td>
+              </tr>
+              <tr>
+                <th>事務所所在地</th>
+                <td>〒107-0061東京都港区北青山3-5-6 青朋ビル2F</td>
+              </tr>
+              <tr>
+                <th>TEL</th>
+                <td>03-5413-5045</td>
+              </tr>
+              <tr>
+                <th>FAX</th>
+                <td>03-5413-5046</td>
+              </tr>
+              <tr>
+                <th>MAIL</th>
+                <td>dummy@cheeseacademy.tokyo</td>
+              </tr>
+              </table>  
+            </div>
+          </div>  
+        </div>
+        <!-- ここからコンタクト -->
+        <div class="contact__wrapper" id="contact">
+          <div class="contact__content">
+            <div class="content__title">
+              <h3>CONTACT</h3>
+            </div>
+            <div class="content__explanations">
+              <p class="content__subtitle">
+                説明会お申し込み・お問い合わせ
+              </p>
+              <p class="content__explanation9">
+                ぜひ1度、足を運んでみませんか。説明会は随時開催中。
+              </p>
+              <p class="content__explanation10">
+                その他、お問い合わせもお気軽にどうぞ。お待ちしております。
+              </p>
+              <p class="content__explanation11">
+                ※チーズアカデミーは実際には存在しません。
+              </p>
+              <p class="content__explanation12">
+                間違っても問い合わせしないようお願いいたします。
+              </p>
+            </div>
+        </div>
+        <!-- ここから問い合わせフォーム -->
+        <!-- PHP使ってデータ送付を考えるとForm タグがいいらしい。参考：https://zero-plus.io/media/html-css/form-coding-practice/ -->
+        <form action="" method="post">
+          <table class="contact__table">
+            <!-- 名前 -->
+            <tr>
+              <th class="contact__item">
+                <label for="contact__name">
+                  名前
+                </label>
+              </th>
+              <td class="contact__body">
+                <input type="text" name="namae" class="body__txt" id="contact__name" placeholder="（例）ジーズ太郎">
+              </td>
+            </tr>
+              <!-- カナ -->
+            <tr>
+              <th class="contact__item">
+                <label for="contact__kana">
+                  カナ
+                </label>
+              </th>
+              <td class="contact__body">
+                <input type="text" name="kana" class="body__txt" id="contact__kana" placeholder="（例）ジーズタロウ">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact__item">
+                <label for="contact__mail">
+                  メールアドレス
+                </label>
+              </th>
+              <td class="contact__body">
+                <input type="email" name="mail" class="body__txt" id="contact__mail" placeholder="（例）gstarodesu@example.com">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact__item">
+                <p class="contact__know">
+                  チーズアカデミーを<br>知ったきっかけ
+                </p>
+              </th>
+              <td class="contact__body">
+                <select name="know" id="contact_select">
+                  <option value="">選択してください</option>
+                  <option value="">google検索</option>
+                  <option value="">SNS</option>
+                  <option value="">紹介</option>
+                  <option value="">たまたま通りかかった</option>
+                  <option value="">その他</option>
+                </select>            
+              </td>
+            </tr>
+            <tr>
+              <th class="contact__item">
+                  志望動機
+              </th>
+              <td class="contact__body">
+                <div class="contact__reasons">
+                <label for="contact__reason">
+                  <input type="checkbox" name="startup">
+                  <span class="reason__txt">起業をしたい</span>
+                </label>
+                <label for="contact__reason">
+                  <input type="checkbox" name="change">
+                  <span class="reason__txt">チーズ系企業に就職・転職したい</span>
+                </label>
+                <label for="contact__reason">
+                  <input type="checkbox" name="add">
+                  <span class="reason__txt">チーズと関わる仕事をしており、仕事に生かしたい</span>
+                </label>
+                <label for="contact__reason">
+                  <input type="checkbox" name="learn">
+                  <span class="reason__txt">チーズの教養を身につけたい</span>
+                </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="contact__itemdetail">
+                <label for="contact__detail">
+                  詳細
+                </label>
+              </th>
+              <td class="contact__body">
+                <textarea name="detail" id="contact__detail" cols="30" rows="10" class="detail__area" placeholder="（例）とても最高だったのであああああああああああああああああああ"></textarea>
+              </td>
+            </tr>
+          </table>
+          <input class="btn contact__submit" type="submit" value="送信">
+        </form>
+      </div>
+    </div>
+    <!-- ここからfooter -->
+    <div id="footer">
+      <p class="footer__cr">
+        copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.
+      </p>
+    </div>
+    <div class="start">
+      <div class="start__logo">
+        <img src="./img/header_logo.png" alt="">
+        <p>チーズとピザが大好きな人へ</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <scrip src="js/main.js"></script>
+    <script>
+      //クリックでランダムに画像表示 https://qumeru.com/magazine/337 clickのメソッドにfunctionで変数設定でいけそう https://black-flag.net/jquery/20150623-5719.html
+        $('.pizza__click').click(function () {
+            var maxNum = 5,
+            rdm = Math.floor(Math.random()*(maxNum)) + 1;
+            $('.randomimages').attr('src', './img/pizza' + rdm + '.png')
+            });
+      // スライドを自動で流す
+        $('.sub__slide').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 9000,
+            arrows: false,
+            cssEase: 'linear'
+        });
+        
+        // 最初の画像表示を時間設定
+        $(function() {
+            setTimeout(function(){
+              $('.start__logo').fadeIn(1200);
+            },500);
+            setTimeout(function(){
+              $('.start').fadeOut(2000);
+            },2500);  
+        });
+        // トップ画像の変化
+        $(function() {
+            setTimeout(function(){
+              $('.subvisual').fadeIn(6000);
+            },6000);
+            setTimeout(function(){
+              $('.sub__slide').animate({ opacity: 0.5}, { duration:6000 })
+            },6000);
+        });
+
+        // ランダムピザの選択
+
+        $('.pizza__click').on('click', function() {
+          $('.pizza__click').css('background-color', '#ffd61a' );
+          $('.pizza__click').text('大当たり〜！' );
+        });
+
+        //時計 参考http://php.o0o0.jp/article/jquery-countdown
+
+        $(function () {
+          var sec = 59;
+          var min = 9;
+      
+          
+          var timer = setInterval(function() {
+            if (min == 0 && sec == 1) {
+              clearInterval(timer);
+            }
+
+            sec -= 1;
+
+            if (sec < 1 && min > 0) {
+              sec = 59;
+              min -= 1;
+            }
+
+            sec_number = ('0' + sec).slice(-2);
+            min_number = ('0' + min).slice(-2);
+
+            $('.countdown').html(min_number + ':' + sec_number);
+          },1000); 
+        });
+
+
+
+
+
+
+        
+
+    </script>
+</body>
+
+</html>
